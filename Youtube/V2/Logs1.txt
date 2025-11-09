@@ -1,0 +1,8 @@
+Input #0, matroska,webm, from 'out_lossless.mkv':
+  Metadata:
+    ENCODER         : Lavf62.6.101
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 5526674 kb/s
+  Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv, progressive), 3840x2160 [SAR 1:1 DAR 16:9], 60 fps, 60 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc62.16.100 hevc_nvenc
+      DURATION        : 00:00:10.000000000

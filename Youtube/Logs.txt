@@ -1,0 +1,109 @@
+C:\Users\tech\Desktop\Youtube\V2>python generate_4k_maxquality.py output.mp4
+Configuration: 3840x2160 @ 60fps, frames=600, duration=10.00s, pixfmt=rgb48le
+Using encoder: hevc_nvenc
+ffmpeg command preview:
+ffmpeg -y -f rawvideo -pix_fmt rgb48le -s 3840x2160 ... 18 -pix_fmt yuv420p -movflags +faststart output.mp4
+Starting ffmpeg...
+ffmpeg version 2025-10-09-git-469aad3897-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 13.100 / 60. 13.100
+  libavcodec     62. 16.100 / 62. 16.100
+  libavformat    62.  6.101 / 62.  6.101
+  libavdevice    62.  2.100 / 62.  2.100
+  libavfilter    11.  9.100 / 11.  9.100
+  libswscale      9.  3.100 /  9.  3.100
+  libswresample   6.  2.100 /  6.  2.100
+C:\Users\tech\Desktop\Youtube\V2\generate_4k_maxquality.py:185: RuntimeWarning: overflow encountered in scalar multiply
+  frame_key = (np.uint32(frame_idx + 1) * KEY_MULT) & MASK24  # +1 avoids zero for frame 0
+Input #0, rawvideo, from 'fd:':
+  Duration: N/A, start: 0.000000, bitrate: 23887872 kb/s
+  Stream #0:0: Video: rawvideo (RGB0 / 0x30424752), rgb48le, 3840x2160, 23887872 kb/s, 60 tbr, 60 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> hevc (hevc_nvenc))
+[hevc_nvenc @ 000002818574c340] Specified rc mode is deprecated.
+[hevc_nvenc @ 000002818574c340] Use -rc constqp/cbr/vbr, -tune and -multipass instead.
+Output #0, mp4, to 'output.mp4':
+  Metadata:
+    encoder         : Lavf62.6.101
+  Stream #0:0: Video: hevc (Main) (hev1 / 0x31766568), yuv420p(tv, progressive), 3840x2160, q=2-31, 60 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.16.100 hevc_nvenc
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    2 fps=1.9 q=47.0 size=    2048KiB time=00:00:00.03 bitrate=503332.1kbits/s speed=0.0323x elapsed=0:00:01.03
+frame=    3 fps=1.9 q=48.0 size=    2048KiB time=00:00:00.05 bitrate=335551.4kbits/s speed=0.0323x elapsed=0:00:01.54
+frame=    5 fps=2.4 q=49.0 size=    2304KiB time=00:00:00.08 bitrate=226497.5kbits/s speed=0.0404x elapsed=0:00:02.06
+frame=    6 fps=2.3 q=49.0 size=    2304KiB time=00:00:00.10 bitrate=188747.2kbits/s speed=0.0388x elapsed=0:00:02.57
+Wrote frame 10/600
+frame=    8 fps=2.6 q=49.0 size=    2560KiB time=00:00:00.13 bitrate=157289.4kbits/s speed=0.0432x elapsed=0:00:03.08
+frame=    9 fps=2.5 q=49.0 size=    2560KiB time=00:00:00.15 bitrate=139812.5kbits/s speed=0.0416x elapsed=0:00:03.60
+frame=   11 fps=2.7 q=49.0 size=    2816KiB time=00:00:00.18 bitrate=125831.3kbits/s speed=0.0444x elapsed=0:00:04.12
+frame=   13 fps=2.8 q=49.0 size=    2816KiB time=00:00:00.21 bitrate=106472.3kbits/s speed=0.0467x elapsed=0:00:04.64
+frame=   14 fps=2.7 q=49.0 size=    3072KiB time=00:00:00.23 bitrate=107855.2kbits/s speed=0.0453x elapsed=0:00:05.15
+Wrote frame 20/6008 q=49.0 size=    3072KiB time=00:00:00.26 bitrate=94373.0kbits/s speed=0.047x elapsed=0:00:05.67
+Wrote frame 30/6009 q=49.0 size=    4096KiB time=00:00:00.45 bitrate=74566.2kbits/s speed=0.0484x elapsed=0:00:09.29
+Wrote frame 40/6000 q=49.0 size=    4864KiB time=00:00:00.61 bitrate=64615.5kbits/s speed=0.0497x elapsed=0:00:12.40
+Wrote frame 50/6000 q=49.0 size=    5632KiB time=00:00:00.78 bitrate=58899.2kbits/s speed=0.0505x elapsed=0:00:15.51
+Wrote frame 60/6001 q=49.0 size=    6400KiB time=00:00:00.95 bitrate=55188.6kbits/s speed=0.051x elapsed=0:00:18.62
+Wrote frame 70/6000 q=49.0 size=    7168KiB time=00:00:01.11 bitrate=52585.6kbits/s speed=0.0502x elapsed=0:00:22.23
+Wrote frame 80/6000 q=49.0 size=    7936KiB time=00:00:01.28 bitrate=50658.8kbits/s speed=0.0507x elapsed=0:00:25.32
+Wrote frame 90/6008 q=49.0 size=    8704KiB time=00:00:01.45 bitrate=49174.8kbits/s speed=0.0475x elapsed=0:00:30.54
+Wrote frame 100/600 q=49.0 size=    9472KiB time=00:00:01.61 bitrate=47996.9kbits/s speed=0.0466x elapsed=0:00:34.67
+Wrote frame 110/600 q=49.0 size=    9984KiB time=00:00:01.76 bitrate=46295.8kbits/s speed=0.0467x elapsed=0:00:37.79
+Wrote frame 120/600 q=49.0 size=   11008KiB time=00:00:01.95 bitrate=46245.1kbits/s speed=0.0471x elapsed=0:00:41.40
+Wrote frame 130/600 q=49.0 size=   11520KiB time=00:00:02.10 bitrate=44939.1kbits/s speed=0.0472x elapsed=0:00:44.49
+Wrote frame 140/600 q=49.0 size=   12544KiB time=00:00:02.28 bitrate=45004.7kbits/s speed=0.0475x elapsed=0:00:48.10
+Wrote frame 150/600 q=49.0 size=   13312KiB time=00:00:02.45 bitrate=44511.1kbits/s speed=0.0479x elapsed=0:00:51.19
+Wrote frame 160/600 q=49.0 size=   13824KiB time=00:00:02.60 bitrate=43556.4kbits/s speed=0.0479x elapsed=0:00:54.29
+Wrote frame 170/600 q=49.0 size=   14848KiB time=00:00:02.78 bitrate=43701.3kbits/s speed=0.0481x elapsed=0:00:57.89
+Wrote frame 180/600 q=49.0 size=   15616KiB time=00:00:02.95 bitrate=43365.0kbits/s speed=0.0484x elapsed=0:01:00.99
+Wrote frame 190/600 q=49.0 size=   16128KiB time=00:00:03.10 bitrate=42619.7kbits/s speed=0.0484x elapsed=0:01:04.08
+Wrote frame 200/600 q=49.0 size=   17152KiB time=00:00:03.28 bitrate=42794.8kbits/s speed=0.0485x elapsed=0:01:07.69
+Wrote frame 210/600 q=49.0 size=   17920KiB time=00:00:03.45 bitrate=42551.0kbits/s speed=0.0487x elapsed=0:01:10.79
+Wrote frame 220/600 q=49.0 size=   18432KiB time=00:00:03.60 bitrate=41943.1kbits/s speed=0.0487x elapsed=0:01:13.89
+Wrote frame 230/600 q=49.0 size=   19456KiB time=00:00:03.78 bitrate=42127.9kbits/s speed=0.0488x elapsed=0:01:17.49
+Wrote frame 240/600 q=49.0 size=   20224KiB time=00:00:03.95 bitrate=41943.1kbits/s speed=0.049x elapsed=0:01:20.60
+Wrote frame 250/600 q=49.0 size=   20736KiB time=00:00:04.10 bitrate=41431.6kbits/s speed=0.049x elapsed=0:01:23.70
+Wrote frame 260/600 q=49.0 size=   21760KiB time=00:00:04.28 bitrate=41616.7kbits/s speed=0.0491x elapsed=0:01:27.32
+Wrote frame 270/600 q=49.0 size=   22528KiB time=00:00:04.43 bitrate=41627.8kbits/s speed=0.0488x elapsed=0:01:30.93
+Wrote frame 280/600 q=49.0 size=   23296KiB time=00:00:04.61 bitrate=41337.4kbits/s speed=0.0486x elapsed=0:01:35.05
+Wrote frame 290/600 q=49.0 size=   24064KiB time=00:00:04.78 bitrate=41212.4kbits/s speed=0.0485x elapsed=0:01:38.67
+Wrote frame 300/600 q=49.0 size=   24832KiB time=00:00:04.95 bitrate=41095.8kbits/s speed=0.0484x elapsed=0:01:42.27
+Wrote frame 310/600 q=49.0 size=   25600KiB time=00:00:05.10 bitrate=41120.7kbits/s speed=0.0482x elapsed=0:01:45.90
+Wrote frame 320/600 q=49.0 size=   26368KiB time=00:00:05.28 bitrate=40884.6kbits/s speed=0.048x elapsed=0:01:50.06
+Wrote frame 330/600 q=49.0 size=   27136KiB time=00:00:05.43 bitrate=40913.8kbits/s speed=0.048x elapsed=0:01:53.15
+Wrote frame 340/600 q=49.0 size=   27904KiB time=00:00:05.61 bitrate=40698.5kbits/s speed=0.0481x elapsed=0:01:56.75
+Wrote frame 350/600 q=49.0 size=   28672KiB time=00:00:05.78 bitrate=40613.5kbits/s speed=0.048x elapsed=0:02:00.36
+Wrote frame 360/600 q=49.0 size=   29440KiB time=00:00:05.93 bitrate=40647.1kbits/s speed=0.0481x elapsed=0:02:03.46
+Wrote frame 370/600 q=49.0 size=   30208KiB time=00:00:06.11 bitrate=40457.4kbits/s speed=0.0479x elapsed=0:02:07.59
+Wrote frame 380/600 q=49.0 size=   30976KiB time=00:00:06.26 bitrate=40492.9kbits/s speed=0.048x elapsed=0:02:10.67
+Wrote frame 390/600 q=49.0 size=   31744KiB time=00:00:06.45 bitrate=40317.4kbits/s speed=0.0478x elapsed=0:02:14.80
+Wrote frame 400/600 q=49.0 size=   32768KiB time=00:00:06.61 bitrate=40569.6kbits/s speed=0.0478x elapsed=0:02:18.42
+Wrote frame 410/600 q=49.0 size=   33280KiB time=00:00:06.76 bitrate=40290.2kbits/s speed=0.0476x elapsed=0:02:22.02
+Wrote frame 420/600 q=49.0 size=   34048KiB time=00:00:06.93 bitrate=40229.1kbits/s speed=0.0478x elapsed=0:02:25.12
+Wrote frame 430/600 q=49.0 size=   35072KiB time=00:00:07.11 bitrate=40371.5kbits/s speed=0.0478x elapsed=0:02:28.75
+Wrote frame 440/600 q=49.0 size=   35584KiB time=00:00:07.26 bitrate=40115.3kbits/s speed=0.0479x elapsed=0:02:31.83
+Wrote frame 450/600 q=49.0 size=   36608KiB time=00:00:07.45 bitrate=40254.1kbits/s speed=0.0479x elapsed=0:02:35.44
+Wrote frame 460/600 q=49.0 size=   37376KiB time=00:00:07.61 bitrate=40199.3kbits/s speed=0.048x elapsed=0:02:38.53
+Wrote frame 470/600 q=49.0 size=   37888KiB time=00:00:07.76 bitrate=39962.9kbits/s speed=0.048x elapsed=0:02:41.64
+Wrote frame 480/600 q=49.0 size=   38656KiB time=00:00:07.93 bitrate=39916.4kbits/s speed=0.0482x elapsed=0:02:44.72
+Wrote frame 490/600 q=49.0 size=   39680KiB time=00:00:08.11 bitrate=40048.3kbits/s speed=0.0482x elapsed=0:02:48.36
+Wrote frame 500/600 q=49.0 size=   40192KiB time=00:00:08.26 bitrate=39829.0kbits/s speed=0.0482x elapsed=0:02:51.44
+Wrote frame 510/600 q=49.0 size=   41216KiB time=00:00:08.45 bitrate=39957.6kbits/s speed=0.0483x elapsed=0:02:55.05
+Wrote frame 520/600 q=49.0 size=   41984KiB time=00:00:08.60 bitrate=39992.2kbits/s speed=0.0483x elapsed=0:02:58.15
+Wrote frame 530/600 q=49.0 size=   42752KiB time=00:00:08.78 bitrate=39873.8kbits/s speed=0.0483x elapsed=0:03:01.75
+Wrote frame 540/600 q=49.0 size=   43520KiB time=00:00:08.93 bitrate=39908.5kbits/s speed=0.0482x elapsed=0:03:05.37
+Wrote frame 550/600 q=49.0 size=   44288KiB time=00:00:09.10 bitrate=39869.0kbits/s speed=0.0481x elapsed=0:03:09.01
+Wrote frame 560/600 q=49.0 size=   45056KiB time=00:00:09.28 bitrate=39759.3kbits/s speed=0.0481x elapsed=0:03:13.13
+Wrote frame 570/600 q=49.0 size=   45824KiB time=00:00:09.45 bitrate=39723.9kbits/s speed=0.048x elapsed=0:03:16.75
+Wrote frame 580/600 q=49.0 size=   46592KiB time=00:00:09.61 bitrate=39689.6kbits/s speed=0.048x elapsed=0:03:20.35
+Wrote frame 590/600 q=49.0 size=   47360KiB time=00:00:09.76 bitrate=39724.2kbits/s speed=0.048x elapsed=0:03:23.47
+Wrote frame 600/600 q=49.0 size=   48128KiB time=00:00:09.93 bitrate=39691.1kbits/s speed=0.048x elapsed=0:03:27.08
+[mp4 @ 0000028185749dc0] Starting second pass: moving the moov atom to the beginning of the filex elapsed=0:03:27.60
+[out#0/mp4 @ 0000028185749cc0] video:48639KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.007493%
+frame=  600 fps=2.9 q=49.0 Lsize=   48643KiB time=00:00:10.00 bitrate=39848.3kbits/s speed=0.0482x elapsed=0:03:27.64
+
+ffmpeg finished with return code: 0
+Video written successfully: output.mp4
+

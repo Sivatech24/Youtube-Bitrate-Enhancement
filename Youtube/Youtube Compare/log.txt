@@ -1,0 +1,15 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'out lossless.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf62.6.101
+  Duration: 00:00:10.02, start: 0.000000, bitrate: 106975 kb/s
+  Stream #0:0[0x1](eng): Video: vp9 (Profile 0) (vp09 / 0x39307076), yuv420p(tv, bt709), 3840x2160, 107198 kb/s, SAR 1:1 DAR 16:9, 60.01 fps, 60 tbr, 16k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Audio: opus (Opus / 0x7375704F), 48000 Hz, stereo, fltp, 1 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
