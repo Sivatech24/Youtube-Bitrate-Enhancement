@@ -1,6 +1,6 @@
 # Youtube-Bitrate-Enhancement
 
-Here’s a clean, professional **`README.md`** you can include with your FFmpeg + CUDA video enhancement workflow project — it explains **v1**, **v2**, and the **YouTube-optimized version**, including what improvements each version brings, the rationale behind pixel-level processing, and how it achieves better clarity and compression results when uploaded to YouTube.
+Here’s a clean, professional **`README.md`** you can include with your FFmpeg + CUDA video enhancement workflow project it explains **v1**, **v2**, and the **YouTube-optimized version**, including what improvements each version brings, the rationale behind pixel-level processing, and how it achieves better clarity and compression results when uploaded to YouTube.
 
 ---
 
@@ -14,7 +14,7 @@ Designed to maximize **clarity and visual depth** before YouTube upload, ensurin
 
 ## 🚀 Overview
 
-Modern YouTube encoding pipelines apply aggressive compression that often reduces color precision, sharpness, and fine details — especially in high-motion or dark scenes.
+Modern YouTube encoding pipelines apply aggressive compression that often reduces color precision, sharpness, and fine details especially in high-motion or dark scenes.
 
 This project provides an **FFmpeg + CUDA** workflow that:
 - Enhances every pixel using **4:4:4 chroma** and **10-bit color depth**.
@@ -70,7 +70,7 @@ This version is tuned for **optimal YouTube encoding results**:
 
 * Keeps every pixel distinct (no chroma subsampling).
 * Uses **CBR 150 Mbps** to preserve clarity before YouTube re-encoding.
-* Outputs in **HDR (BT.2020, PQ)** — forcing YouTube to allocate a higher bitrate on processing.
+* Outputs in **HDR (BT.2020, PQ)** forcing YouTube to allocate a higher bitrate on processing.
 * Delivers sharper, richer detail and smoother gradients after upload.
 
 **Command Example:**
@@ -132,13 +132,9 @@ After re-encoding with CUDA + FFmpeg:
 
 ---
 
-**© 2025 Video Enhancement Pipeline by [Your Name]**
+**© 2025 Video Enhancement Pipeline by [Coding Master 24]**
 Licensed under MIT — use freely for research, creative, and professional video enhancement.
 
 ```
 
 ---
-
-Would you like me to add a **diagram** (in Markdown with ASCII or image-ready format) showing the GPU pipeline flow — like  
-`Decode → Scale (CUDA) → Enhance (EQ) → Encode (NVENC)` — for visual explanation in your GitHub README?
-```
