@@ -133,6 +133,6 @@ After re-encoding with CUDA + FFmpeg:
 ---
 
 **© 2025 Video Enhancement Pipeline by [Coding Master 24]**
-Licensed under MIT — use freely for research, creative, and professional video enhancement.
+Licensed under MIT use freely for research, creative, and professional video enhancement.
 
 ---
